@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circuito Assistência Técnica — Manutenção e peças para computadores</title>
+<meta name="description" content="Assistência técnica especializada em manutenção de placas, montagem de PCs e venda de peças. Atendimento com João Oliveira, técnico com 30 anos de experiência.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ======================= TOPO / NAVEGAÇÃO EM ABAS ======================= -->
+<header class="topbar">
+  <div class="topbar__inner">
+    <a href="#" class="brand" data-tab-link="inicio">
+      <span class="brand__mark">CT</span>
+      <span class="brand__text">
+        <span class="brand__name">Circuito</span>
+        <span class="brand__sub">ASSISTÊNCIA TÉCNICA</span>
+      </span>
+    </a>
+
+    <nav class="tabnav" id="tabnav" role="tablist" aria-label="Navegação principal">
+      <button class="tabnav__btn" role="tab" aria-selected="true" data-tab="inicio">Início</button>
+      <button class="tabnav__btn" role="tab" aria-selected="false" data-tab="servicos">Serviços</button>
+      <button class="tabnav__btn" role="tab" aria-selected="false" data-tab="loja">Loja</button>
+      <button class="tabnav__btn" role="tab" aria-selected="false" data-tab="sobre">Sobre</button>
+      <button class="tabnav__btn" role="tab" aria-selected="false" data-tab="contato">Contato</button>
+    </nav>
+
+    <a class="topbar__cta" href="https://wa.me/5585999999999" target="_blank" rel="noopener">falar no whatsapp</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ======================= BANNER INICIAL / HERO ======================= -->
+<section class="hero">
+  <div class="hero__slides" id="heroSlides">
+    <div class="hero__slide is-active"><img src="assets/img/hero-manutencao.jpg" alt="Técnico realizando reparo detalhado em placa-mãe de notebook"></div>
+    <div class="hero__slide"><img src="assets/img/hero-tecnico.jpg" alt="Técnico com luvas trabalhando na manutenção interna de um computador"></div>
+    <div class="hero__slide"><img src="assets/img/hero-cooler.jpg" alt="Cooler e dissipador de cobre instalados sobre processador AMD"></div>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="circuit-trace"></div>
+
+  <div class="hero__content">
+    <span class="hero__kicker">MANUTENÇÃO · UPGRADE · MONTAGEM</span>
+    <h1 class="hero__title">Seu computador nas mãos de quem entende <em>de placa</em>.</h1>
+    <p class="hero__desc">Diagnóstico honesto e reparo de precisão para notebooks e desktops. Da troca de componentes na placa-mãe até a montagem do PC ideal para o seu uso.</p>
+    <div class="hero__actions">
+      <button class="btn btn--solid" data-tab="loja">ver peças e serviços</button>
+      <a class="btn btn--outline" href="https://wa.me/5585999999999" target="_blank" rel="noopener">orçamento pelo whatsapp</a>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat"><b>30 anos</b><span>DE BANCADA</span></div>
+      <div class="hero__stat"><b>+4.000</b><span>EQUIPAMENTOS REPARADOS</span></div>
+      <div class="hero__stat"><b>90 dias</b><span>DE GARANTIA NO SERVIÇO</span></div>
+    </div>
+  </div>
+
+  <div class="hero__slidedots" id="heroDots">
+    <button class="is-active" data-slide="0" aria-label="Slide 1"></button>
+    <button data-slide="1" aria-label="Slide 2"></button>
+    <button data-slide="2" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<main>
+
+  <!-- ======================= INÍCIO ======================= -->
+  <section class="panel is-active" id="panel-inicio">
+    <div class="wrap">
+
+      <span class="section-num">O QUE FAZEMOS</span>
+      <div class="section-head">
+        <h2>Três frentes de trabalho, uma só bancada.</h2>
+        <p>Não trocamos a placa inteira quando o problema está em um único componente — por isso o reparo costuma sair mais barato do que a troca.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M9 4v16M15 4v16M4 9h16M4 15h16"/></svg>
+          <h3>Reparo em placa</h3>
+          <p>Troca de componentes SMD, reballing de chipset, recuperação de curto-circuito e reconstrução de trilhas.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v6m0 0l3-3m-3 3L9 6M5 12H3m18 0h-2M12 21v-6m0 0l3 3m-3-3l-3 3"/><circle cx="12" cy="12" r="3"/></svg>
+          <h3>Upgrade e montagem</h3>
+          <p>Aumento de memória e armazenamento, troca de fonte, e montagem de PCs sob medida para trabalho ou jogos.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v12H4z"/><path d="M9 20h6M12 16v4"/></svg>
+          <h3>Formatação e suporte</h3>
+          <p>Backup, formatação, remoção de vírus e configuração — explicado em termos simples, sem letras miúdas.</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="split__media"><img src="assets/img/hero-tecnico.jpg" alt="Manutenção interna de gabinete com placa-mãe exposta"></div>
+        <div>
+          <span class="split__label">COMO TRABALHAMOS</span>
+          <h2>Você só paga pelo que realmente precisa ser trocado.</h2>
+          <p>Todo equipamento passa por diagnóstico antes de qualquer orçamento. Se o problema for simples, você sai sabendo o preço na hora — sem enrolação e sem taxa escondida.</p>
+          <ul>
+            <li>Diagnóstico gratuito em manutenções aceitas</li>
+            <li>Peças originais ou compatíveis, à sua escolha</li>
+            <li>Equipamento pronto acompanha nota do que foi trocado</li>
+            <li>Retirada e entrega combinadas pelo WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================= SERVIÇOS ======================= -->
+  <section class="panel" id="panel-servicos">
+    <div class="wrap">
+      <span class="section-num">TABELA DE SERVIÇOS</span>
+      <div class="section-head">
+        <h2>Serviços e valores de referência.</h2>
+        <p>Valores variam conforme o modelo do equipamento e o componente necessário — o orçamento final é sempre confirmado antes do reparo.</p>
+      </div>
+
+      <div class="service-list">
+        <div class="service-row">
+          <span class="service-row__num">01</span>
+          <div>
+            <h3>Reparo de placa-mãe (notebook e desktop)</h3>
+            <p>Troca de capacitores, MOSFETs, conector de força e outros componentes SMD danificados.</p>
+          </div>
+          <div class="service-row__price">a partir de R$ 150<span>por diagnóstico</span></div>
+        </div>
+        <div class="service-row">
+          <span class="service-row__num">02</span>
+          <div>
+            <h3>Troca de tela de notebook</h3>
+            <p>Substituição de tela trincada ou com falha de imagem, com teste completo antes da entrega.</p>
+          </div>
+          <div class="service-row__price">a partir de R$ 280<span>+ peça</span></div>
+        </div>
+        <div class="service-row">
+          <span class="service-row__num">03</span>
+          <div>
+            <h3>Limpeza e troca de pasta térmica</h3>
+            <p>Remoção de poeira do cooler, troca de pasta térmica e ajuste de ventilação para reduzir superaquecimento.</p>
+          </div>
+          <div class="service-row__price">R$ 90</div>
+        </div>
+        <div class="service-row">
+          <span class="service-row__num">04</span>
+          <div>
+            <h3>Formatação com backup</h3>
+            <p>Backup de arquivos, formatação completa, instalação do sistema e dos programas essenciais.</p>
+          </div>
+          <div class="service-row__price">R$ 110</div>
+        </div>
+        <div class="service-row">
+          <span class="service-row__num">05</span>
+          <div>
+            <h3>Montagem de PC sob medida</h3>
+            <p>Escolha das peças conforme seu orçamento e uso, montagem, testes de estresse e organização de cabos.</p>
+          </div>
+          <div class="service-row__price">R$ 150<span>mão de obra</span></div>
+        </div>
+        <div class="service-row">
+          <span class="service-row__num">06</span>
+          <div>
+            <h3>Recuperação de dados</h3>
+            <p>Tentativa de recuperação de arquivos em HDs e SSDs com falha lógica.</p>
+          </div>
+          <div class="service-row__price">sob consulta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= LOJA / PRODUTOS ======================= -->
+  <section class="panel" id="panel-loja">
+    <div class="wrap">
+      <span class="section-num">CATÁLOGO</span>
+      <div class="section-head">
+        <h2>Peças e serviços em estoque.</h2>
+        <p>Filtre por categoria, faixa de preço ou disponibilidade para encontrar o que precisa mais rápido.</p>
+      </div>
+
+      <div class="shop-layout">
+
+        <aside class="filters">
+          <div class="filters__group">
+            <h4>CATEGORIA</h4>
+            <label class="filters__option"><input type="checkbox" name="categoria" value="todas" checked> Todas</label>
+            <label class="filters__option"><input type="checkbox" name="categoria" value="pecas"> Peças</label>
+            <label class="filters__option"><input type="checkbox" name="categoria" value="perifericos"> Periféricos</label>
+            <label class="filters__option"><input type="checkbox" name="categoria" value="servicos"> Serviços</label>
+          </div>
+
+          <div class="filters__group">
+            <h4>PREÇO MÁXIMO</h4>
+            <input type="range" id="priceRange" min="80" max="1200" step="10" value="1200" style="width:100%; accent-color: var(--teal);">
+            <div class="range-row"><span>R$ 80</span><span id="priceValue">até R$ 1200</span></div>
+          </div>
+
+          <div class="filters__group">
+            <h4>DISPONIBILIDADE</h4>
+            <label class="filters__option"><input type="checkbox" id="onlyStock"> Somente em estoque</label>
+          </div>
+
+          <button class="filters__reset" id="resetFilters">limpar filtros</button>
+          <span class="filters__count" id="resultCount">— itens encontrados</span>
+        </aside>
+
+        <div>
+          <div class="shop-toolbar">
+            <input type="text" class="search-input" id="searchInput" placeholder="Buscar por nome, ex: SSD, memória, fonte...">
+            <select class="sort-select" id="sortSelect">
+              <option value="relevancia">ordenar: relevância</option>
+              <option value="menor-preco">ordenar: menor preço</option>
+              <option value="maior-preco">ordenar: maior preço</option>
+              <option value="nome">ordenar: nome A–Z</option>
+            </select>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SOBRE ======================= -->
+  <section class="panel" id="panel-sobre">
+    <div class="wrap">
+      <span class="section-num">QUEM CUIDA DO SEU EQUIPAMENTO</span>
+      <div class="about">
+        <figure class="about__portrait">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <figcaption>JOÃO OLIVEIRA — TÉCNICO RESPONSÁVEL</figcaption>
+        </figure>
+
+        <div>
+          <h2>João Oliveira</h2>
+          <span class="about__role">TÉCNICO EM MANUTENÇÃO · ESPECIALISTA EM REPARO DE PLACAS</span>
+
+          <p>Há 30 anos na bancada, João começou consertando rádios e televisores e acompanhou de perto a transição para os computadores modernos. Hoje, é o responsável técnico da Circuito, atendendo pessoalmente cada equipamento que entra na loja.</p>
+          <p>Sua especialidade é o reparo em nível de componente: identificar exatamente qual peça da placa falhou, em vez de simplesmente indicar a troca completa. Também atua em upgrades, montagem de PCs e suporte geral para notebooks e desktops.</p>
+
+          <div class="about__stats">
+            <div class="about__stat"><b>30</b><span>ANOS DE EXPERIÊNCIA</span></div>
+            <div class="about__stat"><b>+4.000</b><span>REPAROS REALIZADOS</span></div>
+            <div class="about__stat"><b>90</b><span>DIAS DE GARANTIA</span></div>
+          </div>
+
+          <div class="about__skills">
+            <span class="chip">reparo de placa-mãe</span>
+            <span class="chip">reballing de chipset</span>
+            <span class="chip">diagnóstico de fonte</span>
+            <span class="chip">montagem de PC</span>
+            <span class="chip">recuperação de dados</span>
+            <span class="chip">redes e suporte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTATO ======================= -->
+  <section class="panel" id="panel-contato">
+    <div class="wrap">
+      <span class="section-num">FALE CONOSCO</span>
+      <div class="section-head">
+        <h2>Peça seu orçamento.</h2>
+        <p>Conte o que está acontecendo com seu equipamento — respondemos pelo WhatsApp ou e-mail, geralmente no mesmo dia útil.</p>
+      </div>
+
+      <div class="contact-layout">
+        <form class="contact-form" id="contactForm">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="voce@email.com">
+          </div>
+          <div class="field">
+            <label for="assunto">Tipo de equipamento</label>
+            <select id="assunto" name="assunto">
+              <option>Notebook</option>
+              <option>Desktop / PC de mesa</option>
+              <option>Peça avulsa</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mensagem">Descreva o problema</label>
+            <textarea id="mensagem" name="mensagem" required placeholder="Ex: o notebook não liga, faz barulho ao ligar a fonte..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--solid">enviar pedido de orçamento</button>
+          <span class="form-note" id="formNote"></span>
+        </form>
+
+        <div class="contact-side">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/5585999999999" target="_blank" rel="noopener">(85) 99999-9999</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+            <div>
+              <h4>E-mail</h4>
+              <a href="mailto:contato@circuitoassistencia.com.br">contato@circuitoassistencia.com.br</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <h4>Horário de atendimento</h4>
+              <p>Segunda a sexta, 8h às 18h · Sábado, 8h às 12h</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div>
+              <h4>Endereço</h4>
+              <p>Atendimento em loja e retirada agendada pelo WhatsApp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= RODAPÉ ======================= -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand" data-tab-link="inicio">
+          <span class="brand__mark">CT</span>
+          <span class="brand__text">
+            <span class="brand__name">Circuito</span>
+            <span class="brand__sub">ASSISTÊNCIA TÉCNICA</span>
+          </span>
+        </a>
+        <p>Manutenção de computadores, reparo de placas e venda de peças com João Oliveira, técnico com 30 anos de experiência.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="#" data-tab-link="inicio">Início</a></li>
+          <li><a href="#" data-tab-link="servicos">Serviços</a></li>
+          <li><a href="#" data-tab-link="loja">Loja</a></li>
+          <li><a href="#" data-tab-link="sobre">Sobre</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CONTATO</h4>
+        <ul>
+          <li>
+            <a href="https://wa.me/5585999999999" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              (85) 99999-9999
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@circuitoassistencia.com.br">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+              contato@circuitoassistencia.com.br
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Circuito Assistência Técnica · João Oliveira</span>
+      <span>site em HTML, CSS e JS puros</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5585999999999" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
